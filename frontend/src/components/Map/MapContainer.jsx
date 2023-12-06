@@ -1,17 +1,18 @@
 'use client'
-import { GET_ALL_AREAS } from '@/query/areas'
-import { useQuery } from '@apollo/client'
+import AreasServices from '@/services/areas'
 import { Map, Polygon, YMaps } from '@pbe/react-yandex-maps'
 import React, { useEffect, useState } from 'react'
-import dataFile from '../../../public/data.json'
 const MapContainer = () => {
 	const [dataMap, setDataMap] = useState([])
-	const { data, loading, error } = useQuery(GET_ALL_AREAS)
 
-	console.log(data)
+	const getAllAreas = async () => {
+		const data = await (await AreasServices.getAll()).data
+		console.log(data.data)
+		setDataMap(data.data)
+	}
 
 	useEffect(() => {
-		setDataMap(dataFile.features)
+		getAllAreas()
 	}, [])
 
 	return (
@@ -28,10 +29,10 @@ const MapContainer = () => {
 				height='87vh'
 				modules={['control.ZoomControl']}
 			>
-				{dataMap.map((feature, index) => (
+				{dataMap.map((item, index) => (
 					<React.Fragment key={index}>
 						<Polygon
-							geometry={feature.geometry.coordinates.map(coords =>
+							geometry={item.coordinates.map(coords =>
 								coords.map(coord => [coord[1], coord[0]])
 							)}
 						/>
