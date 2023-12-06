@@ -1,0 +1,220 @@
+<mxfile host="app.diagrams.net" modified="2023-12-04T11:11:08.722Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="7Aq61W7UKsUlnFi-SqqP" version="22.1.5" type="device">
+  <diagram name="Страница — 1" id="0UvTOJ1YyciUYhpf-1N6">
+    <mxGraphModel dx="1365" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-1" target="_LR2en2SCpkqLcE3p0Ri-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-1" value="Пытаемся вытащить почту" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="330" y="230" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-2" target="_LR2en2SCpkqLcE3p0Ri-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-2" value="Сервис" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="210" y="140" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-4" target="_LR2en2SCpkqLcE3p0Ri-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-4" value="Окно авторизации" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="190" y="230" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-9" target="_LR2en2SCpkqLcE3p0Ri-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-9" value="Пользователь нажимает на кнопку соц сетей" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="10" y="220" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-13" value="Есть почта?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="510" y="210" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-16" value="Вывод &quot;нет почты&quot;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="660" y="120" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-13" target="_LR2en2SCpkqLcE3p0Ri-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-18" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_LR2en2SCpkqLcE3p0Ri-17">
+          <mxGeometry x="-0.7089" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-20" target="_LR2en2SCpkqLcE3p0Ri-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-20" value="Генерируем данные из данных аккаунта" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="840" y="340" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-13" target="_LR2en2SCpkqLcE3p0Ri-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-22" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_LR2en2SCpkqLcE3p0Ri-21">
+          <mxGeometry x="-0.587" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-23" value="Окно ввода пароля" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="644" y="430" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-25" target="_LR2en2SCpkqLcE3p0Ri-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-25" value="Создаем аккаунт" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="855" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-29" value="Возращаем на сайт" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="180" y="420" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-30" target="_LR2en2SCpkqLcE3p0Ri-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-30" value="Создаем пользователя" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="500" y="450" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-23" target="_LR2en2SCpkqLcE3p0Ri-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-39" target="_LR2en2SCpkqLcE3p0Ri-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="450" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-33" value="Есть почта в нашей БД?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="690" y="260" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-33" target="_LR2en2SCpkqLcE3p0Ri-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-35" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_LR2en2SCpkqLcE3p0Ri-34">
+          <mxGeometry x="-0.7247" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-36" value="Получаем пользователя" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="500" y="350" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-33" target="_LR2en2SCpkqLcE3p0Ri-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-38" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_LR2en2SCpkqLcE3p0Ri-37">
+          <mxGeometry x="-0.8232" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-39" value="Логгируем" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="320" y="420" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-36" target="_LR2en2SCpkqLcE3p0Ri-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-45" target="_LR2en2SCpkqLcE3p0Ri-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-45" value="Сервис" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="220" y="690" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-47" target="_LR2en2SCpkqLcE3p0Ri-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-47" value="Окно авторизации" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="780" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-49" target="_LR2en2SCpkqLcE3p0Ri-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-49" value="Пользователь нажимает на кнопку соц сетей" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="20" y="770" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-55" target="_LR2en2SCpkqLcE3p0Ri-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-55" value="Генерируем данные из данных аккаунта" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="815" y="870" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-58" value="Окно регистрации с заполненными данными" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="840" y="970" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-61" value="Возращаем на сайт" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="190" y="970" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-63" target="_LR2en2SCpkqLcE3p0Ri-72">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-63" value="Создаем пользователя" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="610" y="990" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-58" target="_LR2en2SCpkqLcE3p0Ri-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-72" target="_LR2en2SCpkqLcE3p0Ri-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="1000" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-66" value="Есть ли такой провайдер и client_id?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="680" y="760" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-66" target="_LR2en2SCpkqLcE3p0Ri-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-68" value="Нет" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_LR2en2SCpkqLcE3p0Ri-67">
+          <mxGeometry x="-0.7247" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-69" value="Получаем пользователя" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="610" y="900" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-66" target="_LR2en2SCpkqLcE3p0Ri-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-71" value="Да" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="_LR2en2SCpkqLcE3p0Ri-70">
+          <mxGeometry x="-0.8232" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-72" value="Логгируем" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="330" y="970" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-69" target="_LR2en2SCpkqLcE3p0Ri-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-74" value="Получаем токен&lt;br&gt;что за сервис&lt;br&gt;часть данных" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="345" y="780" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-75" value="получаем client_id" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.delay;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="530" y="780" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-74" target="_LR2en2SCpkqLcE3p0Ri-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_LR2en2SCpkqLcE3p0Ri-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_LR2en2SCpkqLcE3p0Ri-75" target="_LR2en2SCpkqLcE3p0Ri-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,9 +1,15 @@
 'use client'
+import { GET_ALL_AREAS } from '@/query/areas'
+import { useQuery } from '@apollo/client'
 import { Map, Polygon, YMaps } from '@pbe/react-yandex-maps'
 import React, { useEffect, useState } from 'react'
 import dataFile from '../../../public/data.json'
 const MapContainer = () => {
 	const [dataMap, setDataMap] = useState([])
+	const { data, loading, error } = useQuery(GET_ALL_AREAS)
+
+	console.log(data)
+
 	useEffect(() => {
 		setDataMap(dataFile.features)
 	}, [])

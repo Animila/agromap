@@ -4,6 +4,7 @@ import Result from '@/components/Result/Result'
 import style from './page.module.scss'
 export default function Home() {
 	return (
+		
 		<div>
 			<Header />
 			<main className={style['main']}>

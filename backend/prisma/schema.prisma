@@ -1,0 +1,41 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Area {
+  id          Int       @id @default(autoincrement())
+  coordinates String    // Массив координат для построения фигуры на карте
+  resources   Resource[]
+  owners   OwnerArea[]
+}
+
+model Resource {
+  id       Int         @id @default(autoincrement())
+  area     Area        @relation(fields: [areaId], references: [id])
+  areaId   Int
+  type     String      // Тип полезного ресурса (почва, растения, другие ресурсы и т.д.)
+  details  String?     // Дополнительная информация о ресурсе
+}
+
+model Owner {
+  id          Int       @id @default(autoincrement())
+  areas OwnerArea[]
+  ownerData   String    // Данные о собственности
+}
+
+model OwnerArea {
+  id       Int    @id @default(autoincrement()) 
+  owner    Owner  @relation(fields: [ownerId], references: [id])
+  ownerId  Int  
+  area     Area   @relation(fields: [areaId], references: [id])
+  areaId   Int  
+}
