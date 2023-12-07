@@ -4,7 +4,11 @@ const cors = require('cors')
 const Routes = require('./API/routes/indexRoutes')
 
 const app = express()
-app.use(cors(), json(), urlencoded({ extended: true }))
+app.use(
+	cors({ credentials: true, origin: 'https://hackaton-yakse.ru' }),
+	json(),
+	urlencoded({ extended: true })
+)
 
 Routes(app, '/api')
 
