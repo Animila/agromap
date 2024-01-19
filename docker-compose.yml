@@ -12,7 +12,7 @@ services:
       - ./nginx/ssl:/etc/nginx/ssl
     depends_on:
       - client
-      - api
+      - api_geo
 
   geo_db:
     image: postgres:alpine3.18
@@ -35,8 +35,8 @@ services:
       start_period: 10s
     restart: always
 
-  api:
-    container_name: api
+  api_geo:
+    container_name: api_geo
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -57,6 +57,6 @@ services:
       - ./frontend:/app
       - /app/node_modules
     depends_on:
-      - api
+      - api_geo
     ports:
       - '2400:2400'

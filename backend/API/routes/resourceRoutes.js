@@ -1,9 +1,11 @@
 const express = require('express')
 const AreasController = require('../controllers/areasController')
+const ResourceController = require('../controllers/resourceController')
 const router = express.Router()
 
-router.get('/', async (req, res) => {
-	const result = await AreasController.getAll()
+router.get('/:idArea', async (req, res) => {
+	const { idArea } = req.params
+	const result = await ResourceController.getByIdArea(parseInt(idArea))
 	res.json(result)
 })
 

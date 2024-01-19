@@ -1,10 +1,19 @@
 'use client'
+import api from '@/http'
 import AreasServices from '@/services/areas'
 import { Map, Polygon, YMaps } from '@pbe/react-yandex-maps'
 import React, { useEffect, useState } from 'react'
-const MapContainer = () => {
+
+const MapContainer = ({ setResult }) => {
 	const [dataMap, setDataMap] = useState([])
 	const [selectedItem, setSelectedItem] = useState(null)
+
+	const getResource = async idArea => {
+		const data = await api.get('/resource/' + idArea)
+		if (data.data || data.data.data) {
+			setResult(data.data.data)
+		}
+	}
 
 	const getAllAreas = async () => {
 		const data = await (await AreasServices.getAll()).data
@@ -17,6 +26,7 @@ const MapContainer = () => {
 	}, [])
 
 	const openPopup = (event, item) => {
+		getResource(item.id)
 		setSelectedItem(item)
 		if (!item.owners) {
 			return
@@ -62,6 +72,7 @@ const MapContainer = () => {
 		// Удалите всплывающее окно из DOM
 		const popup = document.querySelector('.custom-popup')
 		if (popup) {
+			setResult(null)
 			popup.remove()
 		}
 	}
